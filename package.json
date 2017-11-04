@@ -2,6 +2,10 @@
   "name": "while",
   "version": "0.1.0",
   "description": "Implementación del lenguaje While en TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ucu-compil/ut2-interpreter.git"
+  },
   "author": "Juan Ignacio Laube",
   "license": "MIT",
   "main": "bin/main.js",
@@ -9,20 +13,20 @@
     "start": "node bin/main.js"
   },
   "dependencies": {
-    "@types/moo": "^0.3.0",
-    "@types/nearley": "^2.9.0",
-    "@types/node": "^8.0.19",
-    "@types/readline-sync": "^1.4.2",
-    "moo": "^0.4.0",
-    "nearley": "^2.10.2",
-    "readline-sync": "^1.4.7"
+    "@types/moo": "~0.3.0",
+    "@types/nearley": "~2.9.0",
+    "@types/node": "~8.0.19",
+    "@types/readline-sync": "~1.4.2",
+    "moo": "~0.4.3",
+    "nearley": "~2.10.2",
+    "readline-sync": "~1.4.7"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-run": "^1.7.1",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-typescript": "^3.2.1",
-    "typescript": "^2.4.2"
+    "gulp": "~3.9.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-run": "~1.7.1",
+    "gulp-sourcemaps": "~2.6.0",
+    "gulp-typescript": "~3.2.1",
+    "typescript": "~2.4.2"
   }
 }
