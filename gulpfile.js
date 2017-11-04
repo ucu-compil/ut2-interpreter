@@ -6,9 +6,10 @@ var ts = require("gulp-typescript");
 
 var tsproj = ts.createProject("tsconfig.json");
 
-// Default task, builds all typescript files
-// Depends on gen-grammar
-gulp.task("default", ["gen-grammar"], function () {
+gulp.task("default", ["build"]);
+
+// Builds all typescript files. Depends on gen-grammar.
+gulp.task("build", ["gen-grammar"], function () {
   return tsproj.src()
         .pipe(sourcemaps.init())
         .pipe(tsproj()).js
@@ -18,5 +19,5 @@ gulp.task("default", ["gen-grammar"], function () {
 
 // Generates grammar
 gulp.task("gen-grammar", function () {
-  return run("nearleyc src/parser/Grammar.ne -o src/parser/Grammar.ts").exec()
+  return run("nearleyc src/parser/Grammar.ne -o src/parser/Grammar.ts").exec();
 });
