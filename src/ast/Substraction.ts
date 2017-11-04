@@ -23,6 +23,6 @@ export class Substraction implements Exp {
   }
 
   evaluate(state: State): any {
-    return undefined;
+    return 0; //FIXME
   }
 }

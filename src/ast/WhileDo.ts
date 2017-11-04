@@ -22,6 +22,6 @@ export class WhileDo implements Stmt {
   }
 
   evaluate(state: State): State {
-    return undefined;
+    return state; //FIXME
   }
 }

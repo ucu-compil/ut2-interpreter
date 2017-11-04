@@ -23,6 +23,6 @@ export class CompareGreatOrEqual implements Exp {
   }
 
   evaluate(state: State): any {
-    return undefined;
+    return false; //FIXME
   }
 }

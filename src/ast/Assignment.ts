@@ -23,6 +23,6 @@ export class Assignment implements Stmt {
   }
 
   evaluate(state: State): State {
-    return undefined;
+    return state; //FIXME
   }
 }

@@ -20,6 +20,6 @@ export class Variable implements Exp {
   }
 
   evaluate(state: State): any {
-    return undefined;
+    return 0; //FIXME
   }
 }

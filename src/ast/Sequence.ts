@@ -29,6 +29,6 @@ export class Sequence implements Stmt {
   }
 
   evaluate(state: State): State {
-    return undefined;
+    return state; //FIXME
   }
 }
